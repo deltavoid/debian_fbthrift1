@@ -1,0 +1,11 @@
+
+
+
+
+docker build -f Dockerfile.debian_fbthrift.image1 -t debian_fbthrift:image1 .
+
+
+
+
+docker run -it debian_fbthrift:image1 bash 
+

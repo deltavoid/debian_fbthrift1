@@ -1,0 +1,11 @@
+FROM debian:10.10-ssh-key
+
+
+# WORKDIR /repos
+
+ADD ./scripts/build_libevent.sh /repos/scripts/build_libevent.sh
+RUN cd /repos && ./scripts/build_libevent.sh
+
+
+ADD ./scripts/build_folly.sh /repos/scripts/build_folly.sh
+RUN cd /repos && ./scripts/build_folly.sh
