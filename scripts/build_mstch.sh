@@ -22,15 +22,15 @@ apt-get install -y build-essential \
 
 
 
-# git clone https://github.com/facebook/folly.git --branch=v2018.08.20.00
+# git clone https://github.com/no1msd/mstch.git --branch=1.0.2
 
 
 ssh-keyscan github.com >> $HOME/.ssh/known_hosts
-git clone https://github.com/deltavoid/folly.git --branch=zqy-dev
+git clone https://github.com/deltavoid/mstch.git --branch=zqy-dev
 
 
-cd folly 
-git checkout 6fc758b02e384782daf127b2e2d92f544a9838ef
+cd mstch
+git checkout 8622ef7b8b0a17bb1df1484cfbc6ec9fa70edc24
 
 
 mkdir _build

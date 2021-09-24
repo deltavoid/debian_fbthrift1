@@ -3,8 +3,6 @@ set -xe
 
 
 
-# WORK_DIR=/repos
-# cd $WORK_DIR
 pwd
 
 
@@ -15,17 +13,10 @@ apt-get install -y build-essential \
     liblz4-dev \
     libssl-dev \
     libboost-all-dev 
-      
-    
-    # libevent-dev \
-    # libdouble-conversion-dev \
-    # libgoogle-glog-dev \
-    # libiberty-dev \
-    # liblzma-dev \
-    # libsnappy-dev \
-    # zlib1g-dev \
-    # libjemalloc-dev \
 
+
+
+# git clone https://github.com/libevent/libevent.git --branch=release-2.1.8-stable
 
 
 ssh-keyscan github.com >> $HOME/.ssh/known_hosts

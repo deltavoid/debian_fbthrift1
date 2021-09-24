@@ -22,20 +22,17 @@ apt-get install -y build-essential \
 
 
 
-# git clone https://github.com/facebook/folly.git --branch=v2018.08.20.00
+# git clone https://github.com/facebook/zstd.git --branch=v1.3.6
 
 
 ssh-keyscan github.com >> $HOME/.ssh/known_hosts
-git clone https://github.com/deltavoid/folly.git --branch=zqy-dev
+git clone https://github.com/deltavoid/zstd.git --branch=b1.3.6
 
 
-cd folly 
-git checkout 6fc758b02e384782daf127b2e2d92f544a9838ef
+cd zstd
+git checkout 4fa456d7f12f8b27bd3b2f5dfd4f46898cb31c24
 
 
-mkdir _build
-cd _build
-cmake .. 
-make -j32 
+make -j32
 make install 
 

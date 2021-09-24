@@ -9,3 +9,24 @@ RUN cd /repos && ./scripts/build_libevent.sh
 
 ADD ./scripts/build_folly.sh /repos/scripts/build_folly.sh
 RUN cd /repos && ./scripts/build_folly.sh
+
+
+ADD ./scripts/build_wangle.sh /repos/scripts/build_wangle.sh
+RUN cd /repos && ./scripts/build_wangle.sh
+
+
+ADD ./scripts/build_mstch.sh /repos/scripts/build_mstch.sh
+RUN cd /repos && ./scripts/build_mstch.sh
+
+
+ADD ./scripts/build_zstd.sh /repos/scripts/build_zstd.sh
+RUN cd /repos && ./scripts/build_zstd.sh
+
+
+ADD ./scripts/build_fbthrift.sh /repos/scripts/build_fbthrift.sh
+RUN cd /repos && ./scripts/build_fbthrift.sh
+
+
+ADD ./scripts/build_fbthrift_example3.sh /repos/scripts/build_fbthrift_example3.sh
+RUN cd /repos && ./scripts/build_fbthrift_example3.sh
+

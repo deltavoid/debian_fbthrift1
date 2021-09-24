@@ -21,18 +21,18 @@ apt-get install -y build-essential \
     zlib1g-dev 
 
 
-
-# git clone https://github.com/facebook/folly.git --branch=v2018.08.20.00
+# git clone https://github.com/facebook/wangle.git --branch=v2018.08.20.00
 
 
 ssh-keyscan github.com >> $HOME/.ssh/known_hosts
-git clone https://github.com/deltavoid/folly.git --branch=zqy-dev
+git clone https://github.com/deltavoid/wangle.git --branch=zqy-dev
 
 
-cd folly 
-git checkout 6fc758b02e384782daf127b2e2d92f544a9838ef
+cd wangle
+git checkout 5d6bb85f8bf391f95461113110b76a3b863f9f25
 
 
+cd wangle
 mkdir _build
 cd _build
 cmake .. 
